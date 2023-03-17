@@ -2,16 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Test Page</title>
+        <title>Little Lemon</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,500;1,300;1,500&family=Markazi+Text:wght@400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/013096459d.js" crossorigin="anonymous"></script>
-    </head>
     <body>
         <header class="container flex-center">
-            <div class="logo flex-item">Logo</div>
+            <div class="logo flex-item"><img src="Logo .svg" alt="Little Lemon"></div>
             <nav class="flex-item">
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -30,15 +29,15 @@
                         <h1 class="yellow-txt">Little Lemon</h1>
                         <p>Chicago</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button type="button" class="yellow-bg primary">Reserve A Table</button>
+                        <button type="button" class="primary">Reserve A Table</button>
                     </div>
                     <div class="hero-img cell"><img src="hero-img.png" alt="Hero" /></div>
                 </div>
             </section>
-            <section class="specials container">                
+            <section class="specials container mb50">                
                 <div class="grid-2col">
                     <div class="cell cell-center"><h2>This Weeks Specials</h2></div>
-                    <div class="cell align-right cell-center"><button type="button" class="primary yellow-bg">Online Menu</button></div>
+                    <div class="cell align-right cell-center"><button type="button" class="primary">Online Menu</button></div>
                 </div>
                 <div class="grid-3col">
                     <article class="cell card">
@@ -50,8 +49,12 @@
                                 <h3 class="menu-name">Greek Salad</h3>
                                 <span class="menu-price secondary-one-txt">$12.99</span>
                             </div>
-                            <div class="menu-desc"><p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p></div>
-                            <button class="order primary-sm yellow-bg" type="button">Order for Delivery</button>
+                            <div class="menu-desc">
+                                <p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+                            </div>
+                            <div>
+                                <button class="order primary btn-sm" type="button">Order for Delivery <i class="fa-solid fa-truck"></i></button>
+                            </div>
                         </div>
                     </article>
                     <article class="cell card">
@@ -64,7 +67,9 @@
                                 <span class="menu-price secondary-one-txt">$5.99</span>
                             </div>
                             <div class="menu-desc"><p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p></div>
-                            <button class="order primary-sm yellow-bg" type="button">Order for Delivery</button>
+                            <div>
+                                <button class="order primary btn-sm" type="button">Order for Delivery <i class="fa-solid fa-truck"></i></button>
+                            </div>
                         </div>
                     </article>
                     <article class="cell card">
@@ -77,33 +82,101 @@
                                 <span class="menu-price secondary-one-txt">$12.99</span>
                             </div>
                             <div class="menu-desc"><p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p></div>
-                            <button class="order primary-sm yellow-bg" type="button">Order for Delivery</button>
+                            <div>
+                                <button class="order primary btn-sm" type="button">Order for Delivery <i class="fa-solid fa-truck"></i></button>
+                            </div>
                         </div>
                     </article>
                 </div>
             </section>
-            <section class="testimonials">
+            <section class="testimonials yellow-bg">
                 <div class="container">
-                    <h2>Testimonials</h2>
+                    <h2 class="align-center mb50">Testimonials</h2>
                     <div class="grid-4col">
-                        <article class="cell">1</article>
-                        <article class="cell">2</article>
-                        <article class="cell">3</article>
-                        <article class="cell">4</article>                        
+                        <article class="cell card">
+                            <div class="testi-info">
+                                <div class="testi-img"><img src="User-Profile-PNG.png" alt="Placeholder" /></div>
+                                <div class="testi-name">
+                                    <h3>Person One</h3>
+                                    <span class="rating">4.5/5</span>
+                                </div>
+                            </div>
+                            <div class="testi-quote">"The food was amazing!"</div>
+                        </article>
+                        <article class="cell card">
+                            <div class="testi-info">
+                                <div class="testi-img"><img src="User-Profile-PNG.png" alt="Placeholder" /></div>
+                                <div class="testi-name">
+                                    <h3>Person One</h3>
+                                    <span class="rating">4.5/5</span>
+                                </div>
+                            </div>
+                            <div class="testi-quote">"The food was amazing!"</div>
+                        </article>
+                        <article class="cell card">
+                            <div class="testi-info">
+                                <div class="testi-img"><img src="User-Profile-PNG.png" alt="Placeholder" /></div>
+                                <div class="testi-name">
+                                    <h3>Person One</h3>
+                                    <span class="rating">4.5/5</span>
+                                </div>
+                            </div>
+                            <div class="testi-quote">"The food was amazing! Will tell all my friends about this place."</div>
+                        </article>
+                        <article class="cell card">
+                            <div class="testi-info">
+                                <div class="testi-img"><img src="User-Profile-PNG.png" alt="Placeholder" /></div>
+                                <div class="testi-name">
+                                    <h3>Person One</h3>
+                                    <span class="rating">4.5/5</span>
+                                </div>
+                            </div>
+                            <div class="testi-quote">"The food was amazing!"</div>
+                        </article>                       
                     </div>
                 </div>
             </section>
-            <section class="container grid-2col">
-                <article class="cell">About Text</article>
-                <article class="cell">About Image</article>
+            <section class="container grid-2col about">
+                <article class="cell middle">
+                    <h2>Little Lemon</h2>
+                    <p class="city">Chicago</p>
+                    <div class="about-txt">
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                    </div>
+                </article>
+                <article class="cell about-img"><img src="Mario and Adrian A.jpg" alt="About Little Lemon" /></article>
             </section>
         </main>
         <footer>
             <div class="container grid-4col">
-                <div class="cell">1</div>
-                <div class="cell">2</div>
-                <div class="cell">3</div>
-                <div class="cell">4</div>
+                <div class="cell">LOGO</div>
+                <div class="cell">
+                    <h3>Links</h3>
+                    <ul>
+                        <li class="f-links"><a href="/">Home</a></li>
+                        <li class="f-links"><a href="/">About</a></li>
+                        <li class="f-links"><a href="/">Menu</a></li>
+                        <li class="f-links"><a href="/">Reservations</a></li>
+                        <li class="f-links"><a href="/">Order Online</a></li>
+                        <li class="f-links"><a href="/">Login</a></li>
+                    </ul>
+                </div>
+                <div class="cell">
+                    <h3>Contact</h3>
+                    <p>111 Lemony Way<br />Lemonopolis, CA 91111</p>
+                    <p>(555) 555-5555</p>
+                    <p>Hello@LittleLemon.com</p>
+                </div>
+                <div class="cell">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li class="social-links"><a href="/">Facebook</a></li>
+                        <li class="social-links"><a href="/">Instagram</a></li>
+                        <li class="social-links"><a href="/">Twitter</a></li>
+                        <li class="social-links"><a href="/">YouTube</a></li>
+                    </ul>
+                </div>                
             </div>
         </footer>
     </body>

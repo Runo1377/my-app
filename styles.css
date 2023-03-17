@@ -107,6 +107,7 @@ h3 {
 
 p {
     margin-bottom: 1.2rem;
+    line-height: 1.25rem;
 }
 .hero p {
     font-size: 1.3rem;
@@ -114,6 +115,18 @@ p {
 }
 .align-right {
     text-align: right;
+}
+.align-center {
+    text-align: center;
+}
+.mb50 {
+    margin-bottom: 50px;
+}
+.mb100 {
+    margin-bottom: 100px;
+}
+.middle {
+    align-items: center;
 }
 
 /****** GRIDS ******/
@@ -147,6 +160,7 @@ p {
 /****** FLEX ******/
 .flex-center {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
@@ -163,10 +177,9 @@ main {
 footer {
     padding: 50px 0;
     background-color: #333;
+    color: #fff;
 }
 .logo {
-
-    background-color: brown;
 
 }
 nav {
@@ -177,10 +190,9 @@ nav {
     line-height: 23px;
 }
 main > section {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .testimonials {
-    background-color: #ededed;
 }
 
 
@@ -195,7 +207,7 @@ nav > ul li {
 }
 nav > ul li a {
     display: block;
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin: 0;
     color: #222;
     text-decoration: none;
@@ -210,16 +222,26 @@ nav > ul li a:hover {
 
 /****** BUTTONS *******/
 
-.primary {
+button.primary {
     border: none;
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 18px;
+    background-color: #F4CE14;
+    transition: ease-in-out 0.5s;
 }
-.primary-sm {
-    border: none;
-    padding: 7px 20px;
-    border-radius: 50px;
+button.primary.btn-sm {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+button.primary:focus,
+button.primary.btn-sm:focus {
+    background-color:#ee9972;
+}
+button.primary:hover,
+button.primary.btn-sm:hover {
+    background-color:#fbdab6;
 }
 
 /****** HERO ******/
@@ -228,7 +250,6 @@ nav > ul li a:hover {
     background-color: #1f5e58;
     color: #fff;
     padding: 30px 0;
-    margin-bottom: 50px;
 }
 .hero-text {
     padding: 30px 0;
@@ -246,7 +267,6 @@ nav > ul li a:hover {
 .card {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
 }
 .menu-img {
     border-radius: 16px 16px 0 0;
@@ -278,4 +298,43 @@ nav > ul li a:hover {
 .menu-desc {
     line-height: 1.25rem;
     flex: 1;
+    margin-bottom: 20px;
+}
+
+/****** TESTIMONIALS ******/
+
+.testimonials .cell {
+    background-color: #fff;
+    padding: 2rem;
+}
+.testi-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.2rem;
+    margin-bottom: 20px;
+}
+.testi-img {
+    background-color: #ededed;
+    padding: 5px 10px;
+}
+.testi-img img {
+    max-width: 100%;
+}
+.testi-quote {
+    flex: 1;
+}
+
+/****** ABOUT SECTION ******/
+
+.about {
+    align-items: center;
+}
+.about-img img {
+    max-width: 100%;
+    border-radius: 16px;
+}
+.city {
+    font-weight: 600;
+
 }
