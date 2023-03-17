@@ -4,6 +4,10 @@
         <meta charset="utf-8" />
         <title>Test Page</title>
         <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,500;1,300;1,500&family=Markazi+Text:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/013096459d.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="container flex-center">
@@ -37,9 +41,45 @@
                     <div class="cell align-right cell-center"><button type="button" class="primary yellow-bg">Online Menu</button></div>
                 </div>
                 <div class="grid-3col">
-                    <article class="cell">Article 1</article>
-                    <article class="cell">Article 2</article>
-                    <article class="cell">Article 3</article>
+                    <article class="cell card">
+                        <div class="menu-img">
+                            <img src="greek salad.jpg" alt="Greek Salad" />
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-title">
+                                <h3 class="menu-name">Greek Salad</h3>
+                                <span class="menu-price secondary-one-txt">$12.99</span>
+                            </div>
+                            <div class="menu-desc"><p>The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p></div>
+                            <button class="order primary-sm yellow-bg" type="button">Order for Delivery</button>
+                        </div>
+                    </article>
+                    <article class="cell card">
+                        <div class="menu-img">
+                            <img src="Bruchetta.jpg" alt="Bruchetta" />
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-title">
+                                <h3 class="menu-name">Bruchetta</h3>
+                                <span class="menu-price secondary-one-txt">$5.99</span>
+                            </div>
+                            <div class="menu-desc"><p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p></div>
+                            <button class="order primary-sm yellow-bg" type="button">Order for Delivery</button>
+                        </div>
+                    </article>
+                    <article class="cell card">
+                        <div class="menu-img">
+                            <img src="lemon-dessert1.jpg" alt="Lemon Dessert" />
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-title">
+                                <h3 class="menu-name">Lemon Dessert</h3>
+                                <span class="menu-price secondary-one-txt">$12.99</span>
+                            </div>
+                            <div class="menu-desc"><p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.</p></div>
+                            <button class="order primary-sm yellow-bg" type="button">Order for Delivery</button>
+                        </div>
+                    </article>
                 </div>
             </section>
             <section class="testimonials">

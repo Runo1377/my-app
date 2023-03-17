@@ -1,10 +1,10 @@
 export default function Footer () {
     return (<>
         <footer>
-            <div class="column">
+            <div className="column">
                 <img src="Logo.svg" alt="Little Lemon Restaurant" />
             </div>
-            <div class="column">
+            <div className="column">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -14,7 +14,7 @@ export default function Footer () {
                     <li><a href="">Login</a></li>
                 </ul>
             </div>
-            <div class="column">
+            <div className="column">
                 <p>
                     Address:<br />
                     111 Test Ave.<br />
@@ -27,7 +27,7 @@ export default function Footer () {
                     Hello@LittleLemon.com
                 </p>
             </div>
-            <div class="column">
+            <div className="column">
                 <ul>
                     <li>Facebook</li>
                     <li>Instagram</li>

@@ -48,7 +48,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #333;
-    line-height: 2.2em;
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
 }
 .container {
     max-width: 1000px;
@@ -89,19 +90,27 @@ body {
 
 /****** TYPOGRAPHY ******/
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Markazi Text', serif;
+}
 h1 {
-    font-size: 72px;
+    font-size: 84px;
     margin-bottom: 10px;
 }
 h2 {
-    font-size: 48px;
+    font-size: 54px;
     margin-bottom: 10px;
 }
+h3 {
+    font-size: 30px;
+}
+
 p {
     margin-bottom: 1.2rem;
 }
 .hero p {
     font-size: 1.3rem;
+    line-height: 1.4em;
 }
 .align-right {
     text-align: right;
@@ -198,19 +207,19 @@ nav > ul li a:hover {
     color: #444;
 }
 
-/****** TYPOGRAPHY ******/
-
-h1 {
-    font-size: 4rem;
-}
 
 /****** BUTTONS *******/
 
 .primary {
     border: none;
-    padding: 20px 30px;
-    border-radius: 16px;
+    padding: 15px 30px;
+    border-radius: 50px;
     font-size: 18px;
+}
+.primary-sm {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 50px;
 }
 
 /****** HERO ******/
@@ -230,4 +239,43 @@ h1 {
 .hero-img img {
     position: absolute;
     right: 0;
+}
+
+/****** CARDS ******/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.menu-img {
+    border-radius: 16px 16px 0 0;
+    background-color: #EDEFEE;
+    overflow: hidden;
+}
+.menu-img img {
+    max-width: 100%;
+}
+.menu-item {
+    padding: 1rem;
+    background-color: #EDEFEE;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.menu-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.menu-price {
+    margin-left: auto;
+    font-weight: 500;
+}
+.menu-name {
+    margin-right: auto;
+}
+.menu-desc {
+    line-height: 1.25rem;
+    flex: 1;
 }
