@@ -186,7 +186,6 @@ nav {
     font-family: 'Karla';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
     line-height: 23px;
 }
 main > section {
@@ -213,6 +212,7 @@ nav > ul li a {
     text-decoration: none;
     transition: ease-in-out 0.5s;
     border-radius: 50px;
+    font-size: 18px;
 }
 nav > ul li a:hover {
     background: #F4CE14;
@@ -229,6 +229,7 @@ button.primary {
     font-size: 18px;
     background-color: #F4CE14;
     transition: ease-in-out 0.5s;
+    cursor: pointer;
 }
 button.primary.btn-sm {
     padding: 10px 20px;

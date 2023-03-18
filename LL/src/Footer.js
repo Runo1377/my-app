@@ -1,38 +1,34 @@
 export default function Footer () {
     return (<>
         <footer>
-            <div className="column">
-                <img src="Logo.svg" alt="Little Lemon Restaurant" />
-            </div>
-            <div className="column">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Menu</a></li>
-                    <li><a href="">Reservations</a></li>
-                    <li><a href="">Order Online</a></li>
-                    <li><a href="">Login</a></li>
-                </ul>
-            </div>
-            <div className="column">
-                <p>
-                    Address:<br />
-                    111 Test Ave.<br />
-                    Testing, CA 00000
-                </p>
-                <p>
-                    (555) 555-5555
-                </p>
-                <p>
-                    Hello@LittleLemon.com
-                </p>
-            </div>
-            <div className="column">
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>YouTube</li>
-                </ul>
+            <div className="container grid-4col">
+                <div className="cell"><img src="Logo.svg" alt="Little Lemon" /></div>
+                <div className="cell">
+                    <h3>Links</h3>
+                    <ul>
+                        <li className="f-links"><a href="/">Home</a></li>
+                        <li className="f-links"><a href="/">About</a></li>
+                        <li className="f-links"><a href="/">Menu</a></li>
+                        <li className="f-links"><a href="/">Reservations</a></li>
+                        <li className="f-links"><a href="/">Order Online</a></li>
+                        <li className="f-links"><a href="/">Login</a></li>
+                    </ul>
+                </div>
+                <div className="cell">
+                    <h3>Contact</h3>
+                    <p>111 Lemony Way<br />Lemonopolis, CA 91111</p>
+                    <p>(555) 555-5555</p>
+                    <p>Hello@LittleLemon.com</p>
+                </div>
+                <div className="cell">
+                    <h3>Socials</h3>
+                    <ul>
+                        <li className="social-links"><a href="/">Facebook</a></li>
+                        <li className="social-links"><a href="/">Instagram</a></li>
+                        <li className="social-links"><a href="/">Twitter</a></li>
+                        <li className="social-links"><a href="/">YouTube</a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
     </>)
