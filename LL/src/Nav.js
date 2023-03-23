@@ -7,7 +7,7 @@ export default function Nav () {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/menu">Menu</Link></li>
                 <li><a href="/">Order Online</a></li>
-                <li><a href="/">Reserve A Table</a></li>
+                <li><Link to="/reserve-a-table">Reserve A Table</Link></li>
                 <li><a href="/">Login</a></li>
             </ul>
         </nav>

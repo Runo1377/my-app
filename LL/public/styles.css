@@ -339,3 +339,11 @@ button.primary.btn-sm:hover {
     font-weight: 600;
 
 }
+
+/****** FORMS ******/
+
+.booking-form {
+    display: grid; 
+    max-width: 200px; 
+    gap: 20px
+}
