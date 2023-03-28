@@ -1,9 +1,6 @@
-export default function BookingForm(props) {   
-    const availableTimes = ["5:00pm","6:00pm","7:00pm","8:00pm","9:00pm","10:00pm"];
+import AvailableTimes from "./AvailableTimes";
 
-    const listOfTimes = availableTimes.map((time) => 
-        <option key={time}>{time}</option>
-    );
+export default function BookingForm(props) {
 
     return(<>
         <form className="booking-form" onSubmit={props.onFormSubmit}>
@@ -11,7 +8,7 @@ export default function BookingForm(props) {
             <input type="date" id="res-date" name="date" value={props.date} onChange={props.onDateChange} />
             <label htmlFor="res-time">Choose time</label>
             <select id="res-time" name="times" value={props.times} onChange={props.onTimesChange}>
-                {listOfTimes}
+                <AvailableTimes />
             </select>
             <label htmlFor="guests">Number of guests</label>
             <input type="number" placeholder="1" min="1" max="10" id="res-guests" value={props.guests} onChange={props.onGuestsChange} />
