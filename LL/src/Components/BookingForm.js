@@ -1,5 +1,3 @@
-import AvailableTimes from "./AvailableTimes";
-
 export default function BookingForm(props) {
 
     return(<>
@@ -7,8 +5,8 @@ export default function BookingForm(props) {
             <label htmlFor="res-date">Choose date</label>
             <input type="date" id="res-date" name="date" value={props.date} onChange={props.onDateChange} />
             <label htmlFor="res-time">Choose time</label>
-            <select id="res-time" name="times" value={props.times} onChange={props.onTimesChange}>
-                <AvailableTimes />
+            <select id="res-time" name="times" value={props.timesList} onChange={props.onTimesListChange}>
+                {props.listOfTimes}
             </select>
             <label htmlFor="guests">Number of guests</label>
             <input type="number" placeholder="1" min="1" max="10" id="res-guests" value={props.guests} onChange={props.onGuestsChange} />
